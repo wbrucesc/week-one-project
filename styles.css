@@ -1,4 +1,3 @@
-
 /*Background: #F2F1E8
 Text: #131511
 Inline Link: #968772
@@ -14,7 +13,6 @@ Button Text (Hover): #FFFFFF
 Input Border Bottom: #968772
 Input Border Bottom (Focus): #967343
 */
-
 *{
   box-sizing: border-box;
 }
@@ -24,11 +22,8 @@ body{
   /*width: 1280px;*/
   /*background-color: black;*/
 }
-
 /*body > div.page_content > header > div > img{
   /* attempting to move logo to left side */
-
-
 
 .img-logo{
   width: 40px;
@@ -40,7 +35,6 @@ body{
   /*justify-content: center;*/
 
   /*align-items: flex-start;*/
-
 }
 
 .title{
@@ -82,8 +76,8 @@ body > main > div > div > p:nth-child(2){
   z-index: 9999;
   /*text-align: center;
   align-self: center;*/
-
 }
+
 .main_navigation{
   display: flex;
   justify-content: center;
@@ -137,11 +131,7 @@ body > main > div > div > p:nth-child(2){
   /*max-width: 1280px;*/  /******************last change*************/
   /*justify-content: space-between;*/
   /*flex-wrap: wrap;*/
-
-
   /*align-items: center;*/
-
-
 }
 /*.page{
   padding-right: 25px;
@@ -156,9 +146,7 @@ body > main > div > div > p:nth-child(2){
   /*padding-right: 25px;*/
   /*padding-left: 25px;*/
   /*justify-content: space-between;*/
-
   margin: 0 -8px;
-
   /*padding: 10px;*/
 }
 
@@ -181,7 +169,6 @@ body > main > div > div > p:nth-child(2){
   flex: 1 1 55%;
 }
 
-
 #prod2{
   height: 368px;
   /*width:  235px;*/
@@ -203,7 +190,6 @@ body > main > div > div > p:nth-child(2){
   flex: 1 1 15%;
 }
 
-
 #prod4{
   height: 240px;
   width:  100%;
@@ -219,6 +205,7 @@ body > main > div > div > p:nth-child(2){
   width:  100%;
   object-fit: cover;
 }
+
 #product-5{
   flex: 1 1 15%;
 }
@@ -228,6 +215,7 @@ body > main > div > div > p:nth-child(2){
   width:  100%;
   object-fit: cover;
 }
+
 #product-6{
   flex: 1 1 35%;
 }
@@ -237,6 +225,7 @@ body > main > div > div > p:nth-child(2){
   width:  100%;
   object-fit: cover;
 }
+
 #product-7{
   flex: 1 1 15%;
 }
@@ -271,9 +260,109 @@ footer{
 }*/
 
 /* ABOUT PAGE */
+.wrapper{
+
+}
+
+
+.about {
+  margin: 0 215px;
+  font-family: "Merriweather";
+  line-height: 2.30;
+}
+
+.about p{
+  font-size: 1.415em;
+}
+
+.about h2{
+  font-size: 35px;
+  margin-bottom: 0;
+}
+
+.artists {
+  font-size: 4.1em;
+  text-align: center;
+  font-weight: lighter;
+}
 
 .birdhouse{
   float: left;
   height: 160px;
   width: 120;
+  margin-right: 30px;
+  margin-bottom: 12px;
+}
+
+.intro p{
+  margin-right: -12px;
+}
+
+blockquote {
+  font-size: 1.25em;
+  font-style: italic;
+  font-weight: lighter;
+  padding-left: 70px;
+  border-left: 2px solid #817057;
+  margin-left: 0;
+  margin-right: 124px;
+}
+
+.middle p{
+  margin-top: 0;
+}
+
+.grow {
+  color: #FFFFFF;
+  font-size: 2.25em;
+  font-weight: lighter;
+  /*text-align: center;*/
+  background-image: url("images/background-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 322px;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  /*width: 100%;*/
+  margin-left: -229px;
+  margin-right: -215px;
+  /*margin: -48.24 auto;*/
+  /*
+  align-content: center;*/
+  /*width: 100%;*/
+  /*margin: 0 auto; */
+}
+.facs{
+  margin-right: 200px;
+}
+
+.shelf{
+  width: 160px;
+  height: 120px;
+  /*float: right;*/
+}
+.aside{
+  float: right;
+  font-size: 8px;
+  word-wrap: normal;
+  width: 160px;
+  /*display: block;*/
+  /*text-align: center;*/
+  object-fit: cover;
+  position: relative;
+  bottom: 263px;
+}
+.outro p{
+  text-align: justify;
+}
+
+
+.aside p{
+  /*display: block;*/
+  text-align: left;
+  text-size: 1.43em;
+  line-height: 2.1;
 }
