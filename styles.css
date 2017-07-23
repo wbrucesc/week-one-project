@@ -114,12 +114,25 @@ body > main > div > div > p:nth-child(2){
   justify-content: center;
 }
 
+/*>.main_navigation a:visited{
+  color: #968772;
+}*/
+
+/*a:link, a:active{
+  color: #968772;
+}
+
+a.current:link, a.current:active{
+  color: #968772;
+  font-weight: bold;*/
+
 .main_navigation a:hover{
   color: #CD5D67;
 }
 .main_navigation a:active{
   color: #968772;
 }
+
 
   /*NAV BAR*/
 
@@ -259,7 +272,7 @@ footer{
   margin-top: 15px;
 }*/
 
-/* ABOUT PAGE */
+/**** ABOUT PAGE START ****/
 
 .wrapper{
 
@@ -273,7 +286,7 @@ footer{
 }
 
 .about p{
-  font-size: 1.415em;
+  font-size: 1.4em;
 }
 
 .about h2{
@@ -336,6 +349,7 @@ blockquote {
   /*width: 100%;*/
   /*margin: 0 auto; */
 }
+
 .facs{
   margin-right: 200px;
 }
@@ -345,6 +359,10 @@ blockquote {
   height: 120px;
   /*float: right;*/
 }
+.outro{
+  margin-right: 200px;
+}
+
 .aside{
   float: right;
   font-size: 8px;
@@ -354,7 +372,8 @@ blockquote {
   /*text-align: center;*/
   object-fit: cover;
   position: relative;
-  bottom: 263px;
+  bottom: 365px;
+  margin-right: 200px;
 }
 
 .aside p{
@@ -363,6 +382,7 @@ blockquote {
   text-size: 1.43em;
   line-height: 2.1;
   position: relative;
+
 }
 
 table{
@@ -377,4 +397,86 @@ table, td, th{
 }
 .center{
   text-align: center;
+}
+.color{
+  background-color: #F1EBDD;
+}
+/**** END OF ABOUT PAGE ****/
+
+/* NEWSLETTER PAGE START */
+
+.news{
+  display: flex;
+  background-image: url("images/background-2.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  justify-content: center;
+  font-family: "Merriweather";
+}
+
+.signup{
+  position: relative;
+  top: 45px;
+  text-align: center;
+  padding: 35px 32px 31px 32px;
+  background-color: #FFFFFF;
+  margin-top: 45px;
+  width: 613px;
+  height: 381px;
+
+
+}
+
+.headline{
+  font-size: 30px;
+  font-weight: lighter;
+  width: 99%;
+  margin-top: 8px;
+
+}
+.subheadline{
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  width: 100%;
+  font-size: 1.17em;
+  font-weight: normal;
+}
+.person_name{
+  margin-top: 45px;
+  /*margin-bottom: 8px;*/
+  text-align: left;
+  border-bottom: 2px solid #968772;
+  font-family: "Roboto";
+  color: #757575;
+}
+
+.person_name input{
+  border: 0;
+  width: 90%
+}
+.person_name:focus{
+  border-color: #967343;
+}
+
+.person_email{
+  margin-top: 40px;
+  margin-bottom: 31px;
+  text-align: left;
+  border-bottom: 2px solid #968772;
+  font-family: "Roboto";
+  color: #757575;
+
+}
+
+.person_email input{
+  border: 0;
+  width: 90%;
+}
+
+.button input{
+  padding: 20px 30px;
+  background-color: #968772;
+  color: #FFFFFF;
+  font-family: "Roboto";
 }
