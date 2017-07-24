@@ -274,11 +274,6 @@ footer{
 
 /**** ABOUT PAGE START ****/
 
-.wrapper{
-
-}
-
-
 .about {
   margin: 0 215px;
   font-family: "Merriweather";
@@ -292,6 +287,7 @@ footer{
 .about h2{
   font-size: 35px;
   margin-bottom: 0;
+  font-weight: normal;
 }
 
 .artists {
@@ -313,13 +309,13 @@ footer{
 }
 
 blockquote {
-  font-size: 1.25em;
+  font-size: 1.19em;
   font-style: italic;
   font-weight: lighter;
   padding-left: 70px;
   border-left: 2px solid #817057;
   margin-left: 0;
-  margin-right: 124px;
+  margin-right: 0;
 }
 
 .middle p{
@@ -343,15 +339,19 @@ blockquote {
   /*width: 100%;*/
   margin-left: -229px;
   margin-right: -215px;
+  align-items: center;
   /*margin: -48.24 auto;*/
   /*
   align-content: center;*/
   /*width: 100%;*/
   /*margin: 0 auto; */
 }
+.grow h1{
+  font-weight: normal;
+}
 
 .facs{
-  margin-right: 200px;
+  /*margin-right: 200px;*/
 }
 
 .shelf{
@@ -360,40 +360,84 @@ blockquote {
   /*float: right;*/
 }
 .outro{
-  margin-right: 200px;
+  /*margin-right: 200px;*/          /*changed 10:48 to try flex setup*/
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
+#inline{      /*added 10:48*/
+  flex: 1 1 100%;
+  margin-bottom: 5px;
+}
+
+.outro p{     /*added 10:48*/
+  flex: 1 1 80%;
+  margin-top: 0;
+  margin-right: 10px;
+}
 .aside{
-  float: right;
+  /*float: right;*/ /*change 10:48 start*/
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 20%;
+  justify-content: flex-start; /*change 10:48 end*/
   font-size: 8px;
   word-wrap: normal;
-  width: 160px;
+  align-self: center;
+  align-content: flex-start;
+  /*width: 160px;*/
+  /*align-items: stretch;*/
   /*display: block;*/
   /*text-align: center;*/
-  object-fit: cover;
-  position: relative;
-  bottom: 365px;
-  margin-right: 200px;
+  /*object-fit: cover;*/
+  /*position: relative;*/
+  /*bottom: 365px;*/
+  /*margin-right: 200px;*/
+}
+.background{
+  background-image: url("images/background-1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 160px;
+  height: 120px;
 }
 
-.aside p{
+.caption{
+  font-size: 12px;
+  line-height: 2.3em;
+}
+/*.aside p{*/
   /*display: block;*/
-  text-align: left;
+  /*text-align: left;
   text-size: 1.43em;
   line-height: 2.1;
-  position: relative;
+  position: relative;*/
 
 }
+/*#plans{
+  margin-top: -29.050px;
+}*/
+
 
 table{
   border-collapse: collapse;
   height: 245px;
-  width: 692px;
+  min-width: 692px;
+  /*display: flex;
+  flex: 1 1 100%;*/
+  /*width: 80%;
+  position: absolute;*/
 }
 table, td, th{
+
   border: 1px solid #2C2F27;
-  padding-left: 15px;
-  margin-bottom: 55px;        /* 692 x 245 */
+  border-collapse: collapse;
+  padding: 6px 20px;
+  /*padding-left: 15px;*/
+  margin-bottom: 55px;
+     /* 692 x 245 */
 }
 .center{
   text-align: center;
@@ -411,18 +455,22 @@ table, td, th{
   min-height: 100vh;
   background-size: cover;
   justify-content: center;
+  align-items: center;
   font-family: "Merriweather";
+  min-height: 100vh;
+  background-position: center;
 }
 
 .signup{
   position: relative;
-  top: 45px;
+  /*top: 45px;*/
   text-align: center;
   padding: 35px 32px 31px 32px;
   background-color: #FFFFFF;
   margin-top: 45px;
   width: 613px;
   height: 381px;
+  /*align-content: center;*/
 
 
 }
@@ -455,7 +503,8 @@ table, td, th{
   border: 0;
   width: 90%
 }
-.person_name:focus{
+.person_name input:focus, .person_email input:focus{
+  border-bottom: 2px solid #967343;
   border-color: #967343;
 }
 
@@ -477,6 +526,10 @@ table, td, th{
 .button input{
   padding: 20px 30px;
   background-color: #968772;
-  color: #FFFFFF;
+  color: #F2F1E8;
   font-family: "Roboto";
+}
+.button input:hover{
+  color: #FFFFFF;
+  background-color: #967343;
 }
